@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora de Calificaciones</h1>
-    <div class="container">
-        <label for="calificacion1">Calificación 1:</label>
-        <input type="number" id="calificacion1" required>
-        
-        <label for="calificacion2">Calificación 2:</label>
-        <input type="number" id="calificacion2" required>
-        
-        <label for="calificacion3">Calificación 3:</label>
-        <input type="number" id="calificacion3" required>
-        
-        <button onclick="calcularPromedio()">Calcular Promedio</button>
-        
-        <div class="result" id="resultado"></div>
+    <div class="background"></div> 
+    <div class="content">
+        <div class="title-container">
+            <span>Calculadora</span>
+            <span class="middle">de</span>
+            <span>Calificaciones</span>
+        </div>
+        <div class="container">
+            <label for="calificacion1">Calificación 1:</label>
+            <input type="number" id="calificacion1" max="100" step="any" required>
+            
+            <label for="calificacion2">Calificación 2:</label>
+            <input type="number" id="calificacion2" max="100" step="any" required>
+            
+            <label for="calificacion3">Calificación 3:</label>
+            <input type="number" id="calificacion3" max="100" step="any" required>
+            
+            <button onclick="calcularPromedio()">Calcular Promedio</button>
+            
+          
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Logo_americana-01.png/640px-Logo_americana-01.png" alt="Logo" class="logo">
+
+            <div class="result" id="resultado"></div>
+        </div>
     </div>
     <script src="calculadora.js"></script>
 </body>
